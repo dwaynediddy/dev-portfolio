@@ -1,0 +1,43 @@
+.navbar-container {
+    /* background-color: #fff; */
+    display: flex; 
+    padding-top: 1.5rem;
+    padding-bottom: 1rem; 
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; 
+    font-size: 1rem;
+    line-height: 1.75rem; 
+    display: flex; 
+    align-items: center; 
+    opacity: 1;
+    
+    
+    @media (min-width: 768px) { 
+        padding-left: 5rem;
+        padding-right: 5rem; 
+    }
+}
+
+.nav-logo {
+    color: #000;
+    cursor: pointer;
+    flex: 1 1 0%; 
+    margin-left: 1.25rem;
+}
+
+.nav-routes {
+    display: flex;
+    margin-left: 1.25rem; 
+    flex: 1 1 0%; 
+}
+
+.nav-socials {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
