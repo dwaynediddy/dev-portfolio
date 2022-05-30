@@ -1,43 +1,241 @@
 .navbar-container {
+    position: fixed;
+    width: 100%;
     /* background-color: #fff; */
     display: flex; 
-    padding-top: 1.5rem;
-    padding-bottom: 1rem; 
-    padding-left: 2.5rem;
-    padding-right: 2.5rem; 
+    padding: 1.5rem 2.5rem 1rem; 
     font-size: 1rem;
     line-height: 1.75rem; 
-    display: flex; 
-    align-items: center; 
-    opacity: 1;
-    
-    
-    @media (min-width: 768px) { 
-        padding-left: 5rem;
-        padding-right: 5rem; 
-    }
+/*      fade in on load */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .nav-logo {
     color: #000;
     cursor: pointer;
-    flex: 1 1 0%; 
-    margin-left: 1.25rem;
+    margin: 0 1.25rem;
+    margin-right: 24rem;
 }
 
-.nav-routes {
+.navbar-link-container {
     display: flex;
-    margin-left: 1.25rem; 
-    flex: 1 1 0%; 
+  }
+
+  .nav-routes {
+    display: flex;
+    margin-right: 16rem;
 }
 
 .nav-socials {
     display: flex;
-    font-size: 1.5rem;
 }
 
 .nav-links {
     margin: 0 1rem;
     cursor: pointer;
+    font-size: 18px;
 }
 
+.hamburger {
+    opacity: 0;
+}
+
+/* title */
+.title-container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+  
+  .title {
+      font-size: 46px;
+      animation: fadeInTitle ease 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: none;
+  }
+  
+  .subtitle-container {
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .subtitleTwo-container {
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .subtitleThree-container {
+    width: 200px;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .subtitle {
+      animation: fadeInSubTitle ease 11s;
+      animation-iteration-count: 1;
+      animation-fill-mode: none;
+    color: blue;
+  }
+  
+  .subtitleTwo {
+      animation: fadeInSubTitle ease 9s;
+      animation-iteration-count: 1;
+      animation-fill-mode: none;
+    color: red;
+  }
+  
+  .subtitleThree {
+      animation: fadeInSubTitle ease 13s;
+      animation-iteration-count: 1;
+      animation-fill-mode: none;
+    color: green;
+  }
+
+.footer-container {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+      animation: fadeInFooter ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  
+  .nav-socials-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links-footer {
+    margin: 15px;
+  }
+  
+  
+  /* responsive */
+  @media (max-width: 1325px) {
+    .nav-socials {
+      opacity: 0;
+    }
+    
+    .footer-container {
+      opacity: 1;
+    }
+    .nav-logo {
+        margin-right: 36rem;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .navbar-link-container {
+      opacity: 0;
+    }
+    
+    .hamburger {
+      opacity: 1;
+      position: fixed;
+      left: 85%;
+      background-color: blue;
+    }
+  }
+  
+  @media (max-width: 28rem) {
+   
+    .hamburger {
+      background-color: red;
+      left: 70%;
+    }
+    
+    .subtitle-container {
+      opacity: 0;
+    }
+      .subtitleTwo-container {
+      opacity: 0;
+    }
+      .subtitleThree-container {
+      opacity: 0;
+    }
+  }
+  /* on page load animation */
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      top: -50%;
+    }
+    65% {
+      opacity: .3;
+    }      
+    70% {
+      opacity: .4;
+    }
+    75% {
+      opacity: .5;
+    }
+    80% {
+      opacity: .6;
+    }
+    85% {
+      opacity: .7;
+    }
+    90% {
+      opacity: .8;
+    }
+    95% {
+      opacity: .9;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  
+  @keyframes fadeInTitle {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+       }
+  }
+  
+  @keyframes fadeInSubTitle {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInFooter {
+      0% {
+        opacity: 0;
+        bottom: -50%;
+      }
+      100% {
+        opacity: 1;
+        bottom: 0;
+       }
+  }
