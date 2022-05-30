@@ -3,6 +3,7 @@
     width: 100%;
     /* background-color: #fff; */
     display: flex; 
+    /* justify-content: space-between; */
     padding: 1.5rem 2.5rem 1rem; 
     font-size: 1rem;
     line-height: 1.75rem; 
@@ -10,37 +11,36 @@
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
+  }
 
 .nav-logo {
     color: #000;
     cursor: pointer;
-    margin: 0 1.25rem;
-    margin-right: 24rem;
-}
-
-.navbar-link-container {
-    display: flex;
+    margin: 0 2.25rem;
   }
 
-  .nav-routes {
-    display: flex;
-    margin-right: 16rem;
-}
+.navbar-link-container {
+    margin-left: 75%
+  }
 
-.nav-socials {
+.nav-routes {
     display: flex;
-}
+    flex-direction: row;
+  }
+
+.nav-top-links {
+    margin: 0 .5rem;
+  }
 
 .nav-links {
     margin: 0 1rem;
     cursor: pointer;
     font-size: 18px;
-}
+  }
 
 .hamburger {
     opacity: 0;
-}
+  }
 
 /* title */
 .title-container {
@@ -52,11 +52,11 @@
     padding: 20px;
   }
   
-  .title {
-      font-size: 46px;
-      animation: fadeInTitle ease 4s;
-      animation-iteration-count: 1;
-      animation-fill-mode: none;
+.title {
+    font-size: 46px;
+    animation: fadeInTitle ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
   }
   
   .subtitle-container {
@@ -107,17 +107,17 @@
       animation: fadeInSubTitle ease 13s;
       animation-iteration-count: 1;
       animation-fill-mode: none;
-    color: green;
+      color: green;
   }
 
 .footer-container {
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 50px;
-      animation: fadeInFooter ease 3s;
+      animation: fadeInFooter ease 4s;
       animation-iteration-count: 1;
-      animation-fill-mode: forwards;
+      animation-fill-mode: none;
   }
   
   .nav-socials-footer {
@@ -209,12 +209,12 @@
   }
   
   @keyframes fadeInTitle {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-       }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+     }
   }
   
   @keyframes fadeInSubTitle {
@@ -230,12 +230,12 @@
   }
   
   @keyframes fadeInFooter {
-      0% {
-        opacity: 0;
-        bottom: -50%;
-      }
-      100% {
-        opacity: 1;
-        bottom: 0;
-       }
+    0% {
+      opacity: 0;
+      bottom: -50%;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0;
+    }
   }
