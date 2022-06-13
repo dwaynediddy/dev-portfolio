@@ -44,8 +44,84 @@
     font-size: 18px;
   }
 
+  //hamburger menu
 .hamburger {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    padding: 20px;
+  }
+
+.close {
+  height: 80px;
+  width: 80px;
+}
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .line {
+    height: 4px;
+    width: 50px;
+    background-color: #000;
+    margin-top: 5px;
+    border-radius: 10px;
     opacity: 0;
+  }
+  
+  .line:nth-child(1) {
+    transform: rotateback(5deg);
+    animation: rotateback 0.5s 1;
+  }
+  
+  .line:nth-child(2) {
+    width: 35px;
+    left: 50%;
+    transform: translate(20%, 10%);
+  }
+  
+  .line:nth-child(3) {
+    transform: rotateback(5deg);
+    animation: rotateback 0.5s 1;
+  }
+
+  .close .line:nth-child(1) {
+    background-color: red;
+    transform: rotate(135deg);
+    animation: rotate 0.5s 1;
+    position: absolute;
+    /* top: 55px; */
+  }
+  
+  .close .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .close .line:nth-child(3) {
+    background-color: red;
+    transform: rotate(45deg);
+    animation: rotate 0.5s 1;
+    position: absolute;
+    /* top: 55px; */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate2(45deg);
+    }
+  }
+  
+  @keyframes rotateback {
+    0% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate2(0deg);
+    }
   }
 
 /* title */
@@ -99,14 +175,14 @@
       animation: fadeInSubTitle ease 11s;
       animation-iteration-count: 1;
       animation-fill-mode: none;
-    color: blue;
+      color: blue;
   }
   
   .subtitleTwo {
       animation: fadeInSubTitle ease 9s;
       animation-iteration-count: 1;
       animation-fill-mode: none;
-    color: red;
+      color: red;
   }
   
   .subtitleThree {
@@ -144,37 +220,28 @@
 
   }
 
-  /* responsive */
-  @media (max-width: 1325px) {
-    .nav-socials {
-      opacity: 0;
-    }
-    
-    .footer-container {
-      opacity: 1;
-    }
-    .nav-logo {
-        margin-right: 36rem;
-    }
-  }
-  
+  /* responsive */  
   @media (max-width: 950px) {
     .navbar-link-container {
       opacity: 0;
+
     }
     
     .hamburger {
       opacity: 1;
       position: fixed;
       left: 85%;
-      background-color: blue;
+      background-color: transparent;
+    }
+    .line {
+      opacity: 1;
     }
   }
   
   @media (max-width: 28rem) {
    
     .hamburger {
-      background-color: red;
+      background-color: transparent;
       left: 70%;
     }
     

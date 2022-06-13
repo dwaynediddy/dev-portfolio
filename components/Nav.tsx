@@ -1,9 +1,11 @@
 import Link from 'next/link'
-import React from 'react'
-
-import { AiFillLinkedin, AiFillTwitterSquare, AiOutlineGithub } from 'react-icons/ai'
+import { useState } from 'react'
 
 const Nav = () => {
+
+  const [isActive, setIsActive] = useState(true)
+  
+
   return (
     <div className="navbar-container">
         <Link href='/' className="nav-logo">DIDDY</Link>
@@ -13,14 +15,18 @@ const Nav = () => {
               <Link href="/about" >About</Link>
             </div>
             <div className="nav-top-links">
-              <Link href="/contact" >Contacts</Link>
+              <Link href="/contact" >Contact</Link>
             </div>
             <div className="nav-top-links">
               <Link href="/projects" >Projects</Link>
             </div>
           </div>
         </div>
-          <div className="hamburger">hamburger</div>
+          <div className={isActive ? "hamburger" : "hamburger close"} onClick={() => setIsActive(!isActive)}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
       </div>
 
   )
