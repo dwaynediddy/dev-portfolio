@@ -8,18 +8,14 @@ const Footer = () => {
         <div className="nav-socials-footer">
           <Link href='/'>
             <AiFillLinkedin className='nav-links'>
-              <p className="social-title">Linkedin</p>            
             </AiFillLinkedin>  
           </Link>
-          {/* <p>Linkedin</p> */}
           <Link href='/'>
             <AiFillTwitterSquare className='nav-links' />     
           </Link>
-          {/* <p>Linkedin</p> */}
           <Link href='/'>
             <FaGithubSquare className='nav-links' /> 
           </Link>  
-          {/* <p>Linkedin</p> */}
           <Link href='/'>
             <AiFillCodepenSquare className="nav-links" />
           </Link>  
