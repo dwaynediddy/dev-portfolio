@@ -7,17 +7,17 @@ const Footer = () => {
     <div className="footer-container">
         <div className="nav-socials-footer">
           <Link href='/'>
-            <AiFillLinkedin className='nav-links'>
+            <AiFillLinkedin className='nav-links-footer'>
             </AiFillLinkedin>  
           </Link>
           <Link href='/'>
-            <AiFillTwitterSquare className='nav-links' />     
+            <AiFillTwitterSquare className='nav-links-footer' />     
           </Link>
           <Link href='/'>
-            <FaGithubSquare className='nav-links' /> 
+            <FaGithubSquare className='nav-links-footer' /> 
           </Link>  
           <Link href='/'>
-            <AiFillCodepenSquare className="nav-links" />
+            <AiFillCodepenSquare className="nav-links-footer" />
           </Link>  
         </div>
     </div>
