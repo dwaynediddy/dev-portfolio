@@ -1,7 +1,6 @@
 .navbar-container {
     position: fixed;
     width: 100%;
-    /* background-color: #fff; */
     display: flex; 
     /* justify-content: space-between; */
     padding: 1.5rem 2.5rem 1rem; 
@@ -11,10 +10,11 @@
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    z-index: 9;
   }
 
 .nav-logo {
-    color: #000;
+    color: #fff;
     cursor: pointer;
     margin: 0 2.25rem;
   }
@@ -42,6 +42,8 @@
     margin: 0 1rem;
     cursor: pointer;
     font-size: 18px;
+    height: 40px;
+    width: 40px;
   }
 
   //hamburger menu
@@ -63,7 +65,7 @@
   .line {
     height: 4px;
     width: 50px;
-    background-color: #000;
+    background-color: #fff;
     margin-top: 5px;
     border-radius: 10px;
     opacity: 0;
