@@ -63,10 +63,10 @@
   }
   
   .line {
-    height: 4px;
-    width: 50px;
+    height: 3px;
+    width: 40px;
     background-color: #000;
-    margin-top: 5px;
+    margin-top: 8px;
     border-radius: 10px;
     opacity: 0;
   }
@@ -77,9 +77,9 @@
   }
   
   .line:nth-child(2) {
-    width: 35px;
-    left: 50%;
-    transform: translate(20%, 10%);
+    width: 33px;
+    left: 40%;
+    transform: translate(10%, 10%);
   }
   
   .line:nth-child(3) {
