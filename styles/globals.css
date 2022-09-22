@@ -4,8 +4,6 @@ body {
   margin: 0;
   height: 100%;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif; 
-  background-color: #fff;
-
 }
 
 body::before {
