@@ -350,6 +350,9 @@
       .subtitleThree-container {
       opacity: 0;
     }
+    .title {
+      font-size: 24px;
+    }
   }
   /* on page load animation */
   @keyframes fadeInAnimation {
