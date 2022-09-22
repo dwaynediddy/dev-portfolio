@@ -221,7 +221,7 @@
   animation: fadeInTitle ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: none;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
