@@ -32,3 +32,8 @@ section {
     filter: blur(0);
     transform: translateX(0)
   } 
+
+  // hide scroollbar to not push page
+  ::-webkit-scrollbar {
+  display: none;
+}
