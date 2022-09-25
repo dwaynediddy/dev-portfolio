@@ -1359,6 +1359,11 @@
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.3.1.tgz"
   "version" "4.3.1"
 
+"react-intersection-observer@^9.4.0":
+  "integrity" "sha512-v0403CmomOVlzhqFXlzOxg0ziLcVq8mfbP0AwAcEQWgZmR2OulOT79Ikznw4UlB3N+jlUYqLMe4SDHUOyp0t2A=="
+  "resolved" "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.4.0.tgz"
+  "version" "9.4.0"
+
 "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -1371,7 +1376,7 @@
   dependencies:
     "vanilla-tilt" "1.4.1"
 
-"react@*", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.1.0":
+"react@*", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
@@ -1626,11 +1631,6 @@
   "integrity" "sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA=="
   "resolved" "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
   "version" "2.3.0"
-
-"vanilla-tilt@^1.7.2":
-  "integrity" "sha512-arf2wY2Y65rP6Zxve9PnUUnRl9nQ1KenPNae6QRaVq/PEvaIto2bC4jYirNJ19U7nLkzI1H9O+nYtcQlX7BTsA=="
-  "resolved" "https://registry.npmjs.org/vanilla-tilt/-/vanilla-tilt-1.7.2.tgz"
-  "version" "1.7.2"
 
 "vanilla-tilt@1.4.1":
   "integrity" "sha512-yZS4jIejmhqThLlwzJ5juPwDMk6rtf+ekADDK1lAYNiw6H2VGAJr9bt8vCp+ED5kyK6sE0sMq6mxPfV8a/NdFw=="
