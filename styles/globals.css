@@ -5,7 +5,7 @@ body {
   height: 100%;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif; 
   background-color: #fff;
-  background-color: #161624;
+  /* background-color: #161624; */
 }
 
 body::before {
