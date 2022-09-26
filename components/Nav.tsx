@@ -5,7 +5,6 @@ const Nav = () => {
 
   const [isActive, setIsActive] = useState(true)
   
-
   return (
     <div className="navbar-container">
         <Link href='/' className="nav-logo">DIDDY</Link>

@@ -1,8 +1,6 @@
 import React from 'react'
 // import Tilt from "react-vanilla-tilt"
 
-
-
 const TitleText = () => {
   return (
     <div className="header-container">
