@@ -1,3 +1,10 @@
+.project-container {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+
 section {
     display: grid;
     place-items: center;
@@ -10,7 +17,7 @@ section {
     filter: blur(5px);
     transform: translateX(100%);
   
-    transition: all 1s;
+    transition: all 2s;
   }
   
   .show {
@@ -23,17 +30,11 @@ section {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-  
-    transition: all 1s;
+    transition: all 2s;
   }
   
-  .showOOpposite {
+  .showOpposite {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0)
   } 
-
-  // hide scroollbar to not push page
-  ::-webkit-scrollbar {
-  display: none;
-}

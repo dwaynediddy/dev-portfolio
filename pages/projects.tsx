@@ -7,8 +7,7 @@ const projects = () => {
 
 
   return (
-    <div>
-
+    <div className="project-container">
         <section
           ref={fellowShip} 
           className={`${'hidden'} ${fellowShipInView ? 'show' : 'hidden'}`}
@@ -18,9 +17,11 @@ const projects = () => {
               <span>the lord of the rings the fellowship of the ring</span>
             </p>
         </section>
+
+        {/* possibly add content in middle of each section to emphasis the scroll animation */}
         <section
           ref={twoTowers} 
-          className={`${'hiddenOpposite'} ${twoTowersInView ? 'showOOpposite' : 'hiddenOpposite'}`}
+          className={`${'hiddenOpposite'} ${twoTowersInView ? 'showOpposite' : 'hiddenOpposite'}`}
         >
             <h1>another great movie</h1>
             <p><span>the lord of the rings the two towers</span></p>
@@ -32,6 +33,7 @@ const projects = () => {
             <h1>you guessed it</h1>
             <p><span>the lord of the rings return of the king</span></p>
         </section>
+        
     </div>
   )
 }
