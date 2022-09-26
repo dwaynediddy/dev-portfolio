@@ -1,9 +1,15 @@
 import { useInView } from 'react-intersection-observer'
 
 const projects = () => {
-  const { ref:fellowShip, inView: fellowShipInView } = useInView()
-  const { ref:twoTowers, inView: twoTowersInView } = useInView()
-  const { ref:returnOfTheKing, inView: returnOfTheKingInView } = useInView()
+  const { ref:fellowShip, inView: fellowShipInView } = useInView({
+    threshold: 0,
+  })
+  const { ref:twoTowers, inView: twoTowersInView } = useInView({
+    threshold: 0,
+  })
+  const { ref:returnOfTheKing, inView: returnOfTheKingInView } = useInView({
+    threshold: 0,
+  })
 
 
   return (
