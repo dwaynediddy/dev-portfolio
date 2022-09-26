@@ -1,6 +1,6 @@
 import { useInView } from 'react-intersection-observer'
 
-function projects () {
+const Projects = () => {
   
   const { ref:fellowShip, inView: fellowShipInView } = useInView()
   const { ref:twoTowers, inView: twoTowersInView } = useInView()
@@ -39,4 +39,4 @@ function projects () {
   )
 }
 
-export default projects
+export default Projects
