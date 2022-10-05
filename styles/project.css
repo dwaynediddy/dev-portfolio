@@ -4,6 +4,10 @@
     overflow: hidden;
   }
 
+.project-container::-webkit-scrollbar {
+    display: none;
+}
+
 
 section {
     display: grid;

@@ -30,6 +30,10 @@ body::after {
   clip-path: circle(20% at 10% 10%);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -45,6 +49,7 @@ body::after {
   background-color: #fff;
   color: #000;
   height: 100vh;
+  transition: all 0.3s;
 }
 
 .dark {
@@ -53,6 +58,7 @@ body::after {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  transition: all 0.3s;
 }
 
 
@@ -69,7 +75,7 @@ a {
   ::-webkit-scrollbar {
     display: none;
   }
-  
+
 // dark mode button
   
   input[type="checkbox"].toggle {
